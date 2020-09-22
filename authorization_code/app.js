@@ -18,7 +18,7 @@ require("dotenv").config();
 var client_id = process.env.SPOTIFY_CLIENT_ID; // Your client id
 var client_secret = process.env.SPOTIFY_CLIENT_SECRET; // Your secret
 var port = process.env.PORT;
-var redirect_uri = `http://${port}/callback`; // Your redirect uri
+var redirect_uri = "https://song-key.herokuapp.com/callback"; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -122,7 +122,7 @@ app.get("/callback", function (req, res) {
         // we can also pass the token to the browser to make requests from there
         // res.sendFile(path.join(reactFiles + "/index.html"));
         res.redirect(
-          `http://localhost:${port}/client/#` +
+          "https://song-key.herokuapp.com/client/#" +
             querystring.stringify({
               access_token: access_token,
               refresh_token: refresh_token,
