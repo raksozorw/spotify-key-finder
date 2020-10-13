@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Song Key",
+  "name": "Song Key - Spotify API Key Finder",
   "icons": [
     {
       "src": "favicon.ico",
